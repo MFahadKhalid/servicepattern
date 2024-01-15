@@ -23,7 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::controller(CountryController::class)->prefix('admin')->name('country.')->group(function () {
+Route::middleware('auth')->controller(CountryController::class)->prefix('admin')->name('country.')->group(function () {
 
     // Country
     Route::get('country' , 'index')->name('index');
