@@ -25,7 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $data['title'] = 'Home';
-        $data['country'] = Country::count();
         return view('pages.index' , $data);
     }
 }

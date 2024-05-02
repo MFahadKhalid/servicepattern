@@ -23,13 +23,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::middleware('auth')->controller(CountryController::class)->prefix('admin')->name('country.')->group(function () {
-
-    // Country
-    Route::get('country' , 'index')->name('index');
-    Route::get('country/list' , 'list')->name('list');
-    Route::post('country/post', 'store')->name('store');
-    Route::get('/{country}', 'show')->name('show');
-    Route::post('/{country}', 'update')->name('update');
-    Route::delete('/{country}', 'delete')->name('delete');
-});

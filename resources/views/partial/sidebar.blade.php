@@ -11,10 +11,6 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">
           <i class="fa fa-dashboard"></i> <div style="margin-left: 10px;">Dashboard</div></a>
         </li>
-        <li class="nav-title">CRUD</li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('country.index') }}">
-            <i class="fa fa-globe"></i> <div style="margin-left: 10px;">Country</div></a>
-          </li>
     </ul>
   </div>
 

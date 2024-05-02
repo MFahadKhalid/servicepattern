@@ -24,7 +24,7 @@
                             <h4><i class="fa fa-globe"></i> Countries </h4>
                         </div>
                         <div class="col-md-6">
-                            <h4 style="float: right;">{{ $country }}</h4>
+                            <h4 style="float: right;">0</h4>
                         </div>
                     </div>
                 </div>
